@@ -22,6 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-b^g60qlkv8c2zj(g96$7jos&64^_aq53xkyj_hjq@)50pj4&fc'
 
+STRIPE_SECRET_KEY = 'sk_test_51LeA4MKldL0Epryr7kfjlMKruKaHF7szxkUXs6mQB76Na8cU0Qfl6c5TFnVUpDw3enwwkgp3ghWkhX8hs1S82i6F00nDVNbNV1'
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -44,6 +47,7 @@ INSTALLED_APPS = [
     'djoser',
 
     'product.apps.ProductConfig',
+    'order.apps.OrderConfig',
 ]
 
 CORS_ALLOWED_ORIGINS = [
